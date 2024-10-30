@@ -1,0 +1,18 @@
+.sim {
+	/*width: 400px;
+	height: 400px;*/
+	width: 512px;
+	height: 512px;
+	margin: auto;
+}
+
+.controls {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.controlButton {
+	margin: 10px;
+}
