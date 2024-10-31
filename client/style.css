@@ -1,18 +1,46 @@
+body {
+	background: black;
+}
+
 .sim {
-	/*width: 400px;
-	height: 400px;*/
 	width: 512px;
 	height: 512px;
 	margin: auto;
+	padding: 1em;
 }
 
 .controls {
-	width: 50%;
+	width: 512px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	background-color: #404040;
+	border-radius: 0.3em;
 }
 
 .controlButton {
-	margin: 10px;
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.5em;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #222222;
+	border-radius: 0.3em;
+	background-color: #FFFFFF;
+	color: black;
+	transition-duration: 0.1s;
+}
+.controlButton:hover {
+	background-color: #DDDDDD;
+	cursor: pointer;
+}
+.controlButton:active {
+	background-color: #AAAAAA;
+	transform: translateY(1px);
+}
+
+.roboto {
+	font-family: "Roboto", serif;
+	font-weight: 400;
+	font-style: normal;
 }

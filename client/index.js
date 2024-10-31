@@ -16,6 +16,7 @@ function setup() {
 			next[i][j] = false;
 		}
 	}
+	setPaused(false);
 }
 
 function update(dt) {
@@ -62,11 +63,15 @@ function render() {
 }
 
 function togglePaused() {
-	simPaused = !simPaused;
+	setPaused(!simPaused)
+}
+
+function setPaused(newPaused) {
+	simPaused = newPaused;
 	if (simPaused)
-		pauseButton.innerHTML = "resume"
+		pauseButton.innerHTML = "Resume"
 	else
-		pauseButton.innerHTML = "pause"
+		pauseButton.innerHTML = "Pause"
 }
 
 setup();
@@ -86,7 +91,7 @@ const loop = time => {
 	if (accTimeStep >= fixedTimeStep * 1000.0) {
 		accTimeStep = accTimeStep % fixedTimeStep;
 
-		update(dt * 0.001);
+		update(accTimeStep * 0.001);
 		render();
 	}
 
