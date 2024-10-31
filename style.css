@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
 	background: black;
 }
@@ -44,23 +43,4 @@ body {
 	font-family: "Roboto", serif;
 	font-weight: 400;
 	font-style: normal;
-=======
-.sim {
-	/*width: 400px;
-	height: 400px;*/
-	width: 512px;
-	height: 512px;
-	margin: auto;
-}
-
-.controls {
-	width: 50%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-}
-
-.controlButton {
-	margin: 10px;
->>>>>>> 4985859bd03e3ce744cd7a3fa4a5bcf376beae29
 }
